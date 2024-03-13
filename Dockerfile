@@ -1,10 +1,10 @@
 FROM maven:3.8.7-openjdk-18-slim
 
-RUN mkdir /opt/ping
+RUN mkdir /opt/checkpoint1
 
-COPY . /opt/ping
+COPY . /opt/checkpoint1
 
-WORKDIR /opt/ping
+WORKDIR /opt/checkpoint1
 
 RUN mvn clean package
 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class Checkpoint1Controller {
 	
-	@Value("${spring.profiles.active}")
+	@Value("${spring.profiles.active:}")
 	private String activeProfile;
 	
 	@GetMapping("/ping")
